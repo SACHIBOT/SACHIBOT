@@ -1,5 +1,5 @@
 <html>
- <head align="center">SACHIBOT</HEAD>
+ <head><p align="center">SACHIBOT</p></HEAD>
  <body><br><p>
  👋 Hi, I’m @SACHIBOT<br>
  👀 I’m interested in coding<br>
