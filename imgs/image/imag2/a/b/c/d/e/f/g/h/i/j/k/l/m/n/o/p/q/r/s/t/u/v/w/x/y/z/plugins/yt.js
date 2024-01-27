@@ -68,12 +68,12 @@ const yt2 = await dl.youtubedlv2(anu.url)
 if (yt2.video['360p'].fileSizeH.includes('MB') && yt2.video['360p'].fileSizeH.replace(' MB','') >= config.MAX_SIZE) return await conn.sendMsg(from, { text: '*This video too big !!*' }, { quoted: mek });
 if (yt2.video['360p'].fileSizeH.includes('GB')) return await conn.sendMsg(from, { text: '*This video too big !!*' }, { quoted: mek });
 let senda = await conn.sendMsg(from, { video: {url: await yt.video['360p'].download() }, caption: ''}, { quoted: mek })  
-await conn.sendMsg(from, { react: { text: '🎥', key: senda.key }})
+await conn.sendMsg(from, { react: { text: '🎥', key: senda }})
 
 if (yt2.video['720p'].fileSizeH.includes('MB') && yt2.video['720p'].fileSizeH.replace(' MB','') >= config.MAX_SIZE) return await conn.sendMsg(from, { text: '*This video too big !!*' }, { quoted: mek });
 if (yt2.video['720p'].fileSizeH.includes('GB')) return await conn.sendMsg(from, { text: '*This video too big !!*' }, { quoted: mek });
 let senda1 = await conn.sendMsg(from, { video: {url: await yt.video['720p'].download() }, caption: ''}, { quoted: mek })  
-await conn.sendMsg(from, { react: { text: '🎥', key: senda1.key }})
+await conn.sendMsg(from, { react: { text: '🎥', key: senda1 }})
 } catch (e) {
   reply("*Not Found !*")
   l(e)
@@ -124,10 +124,10 @@ let fileSizeInBytes = stats.size;
 let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
 if (fileSizeInMegabytes <= config.MAX_SIZE) {
     let senda =  await conn.sendMsg(from, { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg', fileName: titleYt + '.mp3',caption: '' }, { quoted: mek })
-    await conn.sendMsg(from, { react: { text: '🎼', key: senda.key }})
+    await conn.sendMsg(from, { react: { text: '🎼', key: senda }})
     let sendaE =  await conn.sendMsg(from, { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg', fileName:  `${titleYt}.mp3` }, { quoted: mek })
-    await conn.sendMsg(from, { react: { text: '🎼', key: sendaE.key }})
-await conn.sendMsg(from, { react: { text: '✅', key: mek.key }})
+    await conn.sendMsg(from, { react: { text: '🎼', key: sendaE }})
+await conn.sendMsg(from, { react: { text: '✅', key: mek }})
 return fs.unlinkSync(`./${randomName}`);
 } else {
 reply(lang.SIZE);

@@ -33,7 +33,7 @@ try{
 var inital = new Date().getTime();
 let ping = await conn.sendMsg(from , { text: '```Pinging To index.js!!!```'  }, { quoted: mek } )
 var final = new Date().getTime();
-await conn.sendMsg(from, { delete: ping.key })
+await conn.sendMsg(from, { delete: ping })
 return await conn.sendMsg(from , { text: '*Pong*\n *' + (final - inital) + ' ms* '  }, { quoted: mek } )
 } catch (e) {
 reply('*Error !!*')

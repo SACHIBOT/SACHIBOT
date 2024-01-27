@@ -23,7 +23,7 @@ if(baby1.size.includes('GB')) return reply('*This file is too big !!*')
 const mfile = conn.sendMsg(from, { document : { url : baby1.link}, fileName : baby1.name, mimetype: baby1.mime,caption: `*🧸 Name* : ${baby1.name}
 *📊 Size* : ${baby1.size}
 *🕹️ Mime* : ${baby1.mime}`}, {quoted: mek})	
-await conn.sendMsg(from, { react: { text: '📁', key: mfile.key }})
+await conn.sendMsg(from, { react: { text: '📁', key: mfile }})
 } catch (e) {
 reply('*Error !!*')
 l(e)
