@@ -56,64 +56,59 @@ try{
 for (let i=0;i<commands.length;i++) { 
 if(commands[i].category === 'admin'){
 if(!commands[i].dontAddCommandList){
-menuc1 += `*│►* .${commands[i].pattern}\n`
+menuc1 += `*│◈ │ ►* .${commands[i].pattern}\n`
 }}};
 
 let menuc2 = ``
 for (let i=0;i<commands.length;i++) { 
   if(commands[i].category === 'main'){
   if(!commands[i].dontAddCommandList){
-  menuc2 += `*│►* .${commands[i].pattern}\n`
+  menuc2 += `*│◈ │ ►* .${commands[i].pattern}\n`
   }}};
 
 let menuc3 = ``
 for (let i=0;i<commands.length;i++) { 
 if(commands[i].category === 'convert'){
   if(!commands[i].dontAddCommandList){
-    menuc3 += `*│►* .${commands[i].pattern}\n`
+    menuc3 += `*│◈ │ ►* .${commands[i].pattern}\n`
 }}};
 
 let menuc4 = ``
 for (let i=0;i<commands.length;i++) { 
 if(commands[i].category === 'search'){
   if(!commands[i].dontAddCommandList){
-menuc4 += `*│►* .${commands[i].pattern}\n`
+menuc4 += `*│◈ │ ►* .${commands[i].pattern}\n`
 }}};
 
 let menuc = ``
 for (let i=0;i<commands.length;i++) { 
 if(commands[i].category === 'download'){
   if(!commands[i].dontAddCommandList){
-menuc += `*│►* .${commands[i].pattern}\n`
+menuc += `*│◈ │ ►* .${commands[i].pattern}\n`
 }}};
 
 let menuc6 = ``
 for (let i=0;i<commands.length;i++) { 
 if(commands[i].category === 'owner'){
 if(!commands[i].dontAddCommandList){
-  menuc6 += `*│►* .${commands[i].pattern}\n`
+  menuc6 += `*│◈ │ ►* .${commands[i].pattern}\n`
 }}};
-let menumg = `*HELLO ${pushname}*
-
-*╭─「 ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ」*
+let menumg = `*╭─「 HELLO ${pushname.split(' ')[0]}*」
+*│◈* 
+*│◈ ╭─「 ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ」*
 *│◈ 𝚁𝙰𝙼 𝚄𝚂𝙰𝙶𝙴 -* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 *│◈ 𝚁𝚄𝙽𝚃𝙸𝙼𝙴 -* ${runtime(process.uptime())}
-╰──────────●●►
-
-╭──────────●●►
-*│👾MAIN COMMANDS*
-│   ───────
-${menuc2}╰───────────●●►
-
-╭───────────●●►
-*│💰DOWNLOAD COMMANDS*
-│   ───────
-${menuc}╰───────────●●►
-
-╭───────────●●►
-*│🔍SEARCH COMMANDS*
-│   ───────
-${menuc4}╰───────────●●►`
+*│◈ ╰──────────●●►*
+*│◈ ╭──────────●●►*
+*│◈ │👾MAIN COMMANDS*
+*│◈ │ ◄●●─────────●●►*
+${menuc2}*│◈ ╰───────────●●►*
+*│◈ ╭───────────●●►*
+*│◈ │🔍MOVIE COMMANDS*
+*│◈ │ ◄●●─────────●●►*
+${menuc4}*│◈ ╰───────────●●►*
+*│◈  ${config.FOOTERNAME}*
+*╰───────────●●►*`
 await conn.sendMsg(from, { image: { url: config.LOGO }, caption: menumg }, { quoted: mek })
 } catch (e) {
 reply('*Error !!*')
