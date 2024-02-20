@@ -12,5 +12,7 @@ MAX_SIZE: process.env.MAX_SIZE === undefined ? '500': process.env.MAX_SIZE,/*add
 ONLY_GROUP: process.env.ONLY_GROUP === undefined ? 'false' : process.env.ONLY_GROUP,
 ONLY_ME: process.env.ONLY_ME === undefined ? 'true' : process.env.ONLY_ME,
 ALIVE: process.env.ALIVE === undefined ? `Hello im alive now !!` : process.env.ALIVE,
-LOGO: process.env.LOGO === undefined ? `https://telegra.ph/file/800b484e6723535f201b1.jpg` : process.env.LOGO
+LOGO: process.env.LOGO === undefined ? `https://telegra.ph/file/800b484e6723535f201b1.jpg` : process.env.LOGO,
+DEVNUMBER: process.env.DEVNUMBER === undefined ? 'https://wa.me/94725881990?text=.request%20premium' : process.env.DEVNUMBER,
+DEVBOT: process.env.DEVBOT === undefined ? '94761717506?text=.request%20trial' : process.env.DEVBOT
 };
