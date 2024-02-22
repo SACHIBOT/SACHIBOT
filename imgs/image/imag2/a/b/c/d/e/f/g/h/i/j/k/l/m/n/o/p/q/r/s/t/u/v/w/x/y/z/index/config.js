@@ -8,7 +8,7 @@ module.exports = {
 SESSION_ID: process.env.SESSION_ID === undefined ? '' : process.env.SESSION_ID,
 BOTNAME : 'MOVIE-MYSTIC',
 FOOTERNAME: '‌ꜱᴀᴄʜɪʙᴏᴛ',
-ALWAYS_ONLINE process.env.ALWAYS_ONLINE === undefined ? '' : process.env.ALWAYS_ONLINE,
+ALWAYS_ONLINE: process.env.ALWAYS_ONLINE === undefined ? 'false' : process.env.ALWAYS_ONLINE,
 MAX_SIZE: process.env.MAX_SIZE === undefined ? '500': process.env.MAX_SIZE,/*add this in megabytes*/
 ONLY_GROUP: process.env.ONLY_GROUP === undefined ? 'false' : process.env.ONLY_GROUP,
 ONLY_ME: process.env.ONLY_ME === undefined ? 'true' : process.env.ONLY_ME,
