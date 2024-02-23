@@ -2,6 +2,20 @@
 <p align="center">
  👋 Hi, I’m @SACHIBOT<br>
  👀 I’m interested in coding<br>
- 🌱 I’m currently learning python,php,java<br>
- 📫 How to reach me- sachibot26@gmail.com<br>
+ 🌱 I’m currently learning python,javascript,java<br>
+ 📫 How to reach me- sachintharashan26@gmail.com<br>
   </p>
+<div style="display: flex; flex-direction: column; align-items: center;">
+
+<img align="left" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SACHIBOT&layout=compact&theme=dark" alt=SACHIBOT />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SACHIBOT&show_icons=true&locale=en&theme=dark" alt="SACHIBOT GitHub Stats" />
+
+
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<div align="center">
+<a href="https://github.com/SACHIBOT">
+<img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=SACHIBOT&theme=dark" height="180em" />
+<img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=SACHIBOT&theme=dark" height="180em" />
+<img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=SACHIBOT&theme=dark" alt="SACHIBOT GitHub Streak Stats" />
+</div>
