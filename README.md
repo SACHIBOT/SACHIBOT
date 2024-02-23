@@ -1,4 +1,4 @@
-![SACHIBOT](https://cardivo.vercel.app/api?name=Sachintha%20Rashan%20&description=Hi,%20Welcome%20To%20My%20Profile&image=https://telegra.ph/file/78d8fad98d6ad886f8f92.jpg&s=10?v=4&backgroundColor=%23e4f2f6&instagram=sachi_ya_004&github=SACHIBOT)
+![SACHIBOT](https://cardivo.vercel.app/api?name=Sachintha%20Rashan&description=Hi,%20Welcome%20To%20My%20Profile%20&image=https://telegra.ph/file/78d8fad98d6ad886f8f92.jpg?v=4&s=10?v=4&backgroundColor=%23ecf0f1&instagram=sachi_ya_004&github=SACHIBOT&twitter=&pattern=leaf&colorPattern=%23eaeaea)
 <p align="center">
  👋 Hi, I’m @SACHIBOT<br>
  👀 I’m interested in coding<br>
